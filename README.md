@@ -1,5 +1,6 @@
-[![Build Status](https://app.travis-ci.com/berpress/moodle_ui_test.svg?branch=main)](https://app.travis-ci.com/berpress/moodle_ui_test)
-# moodle_ui_test
+
+
+# Final UI-test Student's Project
 Final project / QA Python
 
 
