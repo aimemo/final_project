@@ -1,31 +1,49 @@
 [![Build Status](https://app.travis-ci.com/berpress/moodle_ui_test.svg?branch=main)](https://app.travis-ci.com/berpress/moodle_ui_test)
 # moodle_ui_test
-Selenium/Python
+Final project / QA Python
 
 
-Use python 3.8 +
-Create and activate virtual environments
+[//]: # (Use python 3.8 +)
 
-```
-python3 -m venv env
-source env/bin/activate
-```
+[//]: # (Create and activate virtual environments)
 
-Run in terminal
+[//]: # ()
+[//]: # (```)
 
-```
-pip install -r requirements.txt
-```
+[//]: # (python3 -m venv env)
 
-pre-commit https://pre-commit.com
-```
-pre-commit run --all-files
-```
+[//]: # (source env/bin/activate)
 
-Test app
-```
-https://qacoursemoodle.innopolis.university
-```
+[//]: # (```)
 
+[//]: # ()
+[//]: # (Run in terminal)
 
-pytest --alluredir=allure-results/ 
+[//]: # ()
+[//]: # (```)
+
+[//]: # (pip install -r requirements.txt)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (pre-commit https://pre-commit.com)
+
+[//]: # (```)
+
+[//]: # (pre-commit run --all-files)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (Test app)
+
+[//]: # (```)
+
+[//]: # (https://qacoursemoodle.innopolis.university)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # ()
+[//]: # (pytest --alluredir=allure-results/ )
