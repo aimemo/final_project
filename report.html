@@ -429,7 +429,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 25-Nov-2021 at 19:41:56 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 19-Dec-2021 at 02:32:36 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -437,16 +437,16 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>{"pluggy": "1.0.0", "py": "1.11.0", "pytest": "6.2.5"}</td></tr>
       <tr>
         <td>Platform</td>
-        <td>macOS-11.6.1-x86_64-i386-64bit</td></tr>
+        <td>Windows-10-10.0.17134-SP0</td></tr>
       <tr>
         <td>Plugins</td>
-        <td>{"Faker": "9.8.3", "allure-pytest": "2.9.45", "html": "3.1.1", "metadata": "1.11.0"}</td></tr>
+        <td>{"Faker": "9.8.2", "html": "3.1.1", "metadata": "1.11.0"}</td></tr>
       <tr>
         <td>Python</td>
-        <td>3.9.9</td></tr></table>
+        <td>3.9.7</td></tr></table>
     <h2>Summary</h2>
-    <p>4 tests ran in 19.94 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>3 tests ran in 43.28 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -457,32 +457,11 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">tests/login/test_login.py::TestLogin::test_login_with_valid_data</td>
-          <td class="col-duration">5.79</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">self = &lt;test_login.TestLogin object at 0x108020c70&gt;, app = &lt;fixtures.pages.application.Application object at 0x1080e5970&gt;, user_data = &lt;fixtures.models.login.LoginData object at 0x10801aca0&gt;<br/><br/>    def test_login_with_valid_data(self, app, user_data):<br/>        &quot;&quot;&quot;<br/>        Steps:<br/>        1. Open login page<br/>        2. Auth with valid data<br/>        3. Check result<br/>        &quot;&quot;&quot;<br/>        app.open_login_page()<br/>        app.login.auth(data=user_data, is_submit=True)<br/>&gt;       assert 1 == 2  # TODO add assert<br/><span class="error">E       assert 1 == 2</span><br/><span class="error">E         +1</span><br/><span class="error">E         -2</span><br/><br/>tests/login/test_login.py:16: AssertionError<br/> -----------------------------Captured stderr setup------------------------------ <br/>
-
-====== WebDriver manager ======
-Current google-chrome version is 96.0.4664
-Get LATEST chromedriver version for 96.0.4664 google-chrome
-Driver [/Users/alexanderlozovoy/.wdm/drivers/chromedriver/mac64/96.0.4664.45/chromedriver] found in cache
-<br/> -------------------------------Captured log setup------------------------------- <br/>2021-11-25 19:41:37 INFO
-
-2021-11-25 19:41:37 INFO ====== WebDriver manager ======
-2021-11-25 19:41:37 INFO Current google-chrome version is 96.0.4664
-2021-11-25 19:41:37 INFO Get LATEST chromedriver version for 96.0.4664 google-chrome
-2021-11-25 19:41:37 INFO Driver [/Users/alexanderlozovoy/.wdm/drivers/chromedriver/mac64/96.0.4664.45/chromedriver] found in cache
-2021-11-25 19:41:39 INFO Start app on https://qacoursemoodle.innopolis.university/login/index.php<br/> -------------------------------Captured log call-------------------------------- <br/>2021-11-25 19:41:40 INFO Login with user super_qa_2021 and password Password11!<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">tests/login/test_login.py::TestLogin::test_login_with_invalid_data</td>
-          <td class="col-duration">4.37</td>
+          <td class="col-name">tests/test_search.py::TestSearch::test_search_valid_data</td>
+          <td class="col-duration">17.45</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -491,19 +470,18 @@ Driver [/Users/alexanderlozovoy/.wdm/drivers/chromedriver/mac64/96.0.4664.45/chr
 ====== WebDriver manager ======
 Current google-chrome version is 96.0.4664
 Get LATEST chromedriver version for 96.0.4664 google-chrome
-Driver [/Users/alexanderlozovoy/.wdm/drivers/chromedriver/mac64/96.0.4664.45/chromedriver] found in cache
-<br/> -------------------------------Captured log setup------------------------------- <br/>2021-11-25 19:41:43 INFO
+Driver [C:\Users\aimemo\.wdm\drivers\chromedriver\win32\96.0.4664.45\chromedriver.exe] found in cache
+<br/> -------------------------------Captured log setup------------------------------- <br/>2021-12-19 02:31:53 INFO 
 
-2021-11-25 19:41:43 INFO ====== WebDriver manager ======
-2021-11-25 19:41:43 INFO Current google-chrome version is 96.0.4664
-2021-11-25 19:41:43 INFO Get LATEST chromedriver version for 96.0.4664 google-chrome
-2021-11-25 19:41:43 INFO Driver [/Users/alexanderlozovoy/.wdm/drivers/chromedriver/mac64/96.0.4664.45/chromedriver] found in cache
-2021-11-25 19:41:45 INFO Start app on https://qacoursemoodle.innopolis.university/login/index.php<br/> -------------------------------Captured log call-------------------------------- <br/>2021-11-25 19:41:46 INFO Login with user xfedoseev@example.com and password $zBKA(n6j7<br/></div></td></tr></tbody>
+2021-12-19 02:31:53 INFO ====== WebDriver manager ======
+2021-12-19 02:31:53 INFO Current google-chrome version is 96.0.4664
+2021-12-19 02:31:53 INFO Get LATEST chromedriver version for 96.0.4664 google-chrome
+2021-12-19 02:31:54 INFO Driver [C:\Users\aimemo\.wdm\drivers\chromedriver\win32\96.0.4664.45\chromedriver.exe] found in cache<br/> -------------------------------Captured log call-------------------------------- <br/>2021-12-19 02:31:58 INFO Искомый товар - apples<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">tests/login/test_login.py::TestLogin::test_login_with_password[login]</td>
-          <td class="col-duration">4.61</td>
+          <td class="col-name">tests/test_search.py::TestSearch::test_search_invalid_data</td>
+          <td class="col-duration">19.31</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -512,19 +490,18 @@ Driver [/Users/alexanderlozovoy/.wdm/drivers/chromedriver/mac64/96.0.4664.45/chr
 ====== WebDriver manager ======
 Current google-chrome version is 96.0.4664
 Get LATEST chromedriver version for 96.0.4664 google-chrome
-Driver [/Users/alexanderlozovoy/.wdm/drivers/chromedriver/mac64/96.0.4664.45/chromedriver] found in cache
-<br/> -------------------------------Captured log setup------------------------------- <br/>2021-11-25 19:41:47 INFO
+Driver [C:\Users\aimemo\.wdm\drivers\chromedriver\win32\96.0.4664.45\chromedriver.exe] found in cache
+<br/> -------------------------------Captured log setup------------------------------- <br/>2021-12-19 02:32:10 INFO 
 
-2021-11-25 19:41:47 INFO ====== WebDriver manager ======
-2021-11-25 19:41:47 INFO Current google-chrome version is 96.0.4664
-2021-11-25 19:41:47 INFO Get LATEST chromedriver version for 96.0.4664 google-chrome
-2021-11-25 19:41:47 INFO Driver [/Users/alexanderlozovoy/.wdm/drivers/chromedriver/mac64/96.0.4664.45/chromedriver] found in cache
-2021-11-25 19:41:49 INFO Start app on https://qacoursemoodle.innopolis.university/login/index.php<br/> -------------------------------Captured log call-------------------------------- <br/>2021-11-25 19:41:51 INFO Login with user None and password None<br/></div></td></tr></tbody>
+2021-12-19 02:32:10 INFO ====== WebDriver manager ======
+2021-12-19 02:32:10 INFO Current google-chrome version is 96.0.4664
+2021-12-19 02:32:10 INFO Get LATEST chromedriver version for 96.0.4664 google-chrome
+2021-12-19 02:32:10 INFO Driver [C:\Users\aimemo\.wdm\drivers\chromedriver\win32\96.0.4664.45\chromedriver.exe] found in cache<br/> -------------------------------Captured log call-------------------------------- <br/>2021-12-19 02:32:15 INFO Искомый товар - Чебурек<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">tests/login/test_login.py::TestLogin::test_login_with_password[password]</td>
-          <td class="col-duration">4.68</td>
+          <td class="col-name">tests/test_search.py::TestSearch::test_add_item_to_basket</td>
+          <td class="col-duration">6.23</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -533,11 +510,10 @@ Driver [/Users/alexanderlozovoy/.wdm/drivers/chromedriver/mac64/96.0.4664.45/chr
 ====== WebDriver manager ======
 Current google-chrome version is 96.0.4664
 Get LATEST chromedriver version for 96.0.4664 google-chrome
-Driver [/Users/alexanderlozovoy/.wdm/drivers/chromedriver/mac64/96.0.4664.45/chromedriver] found in cache
-<br/> -------------------------------Captured log setup------------------------------- <br/>2021-11-25 19:41:52 INFO
+Driver [C:\Users\aimemo\.wdm\drivers\chromedriver\win32\96.0.4664.45\chromedriver.exe] found in cache
+<br/> -------------------------------Captured log setup------------------------------- <br/>2021-12-19 02:32:29 INFO 
 
-2021-11-25 19:41:52 INFO ====== WebDriver manager ======
-2021-11-25 19:41:52 INFO Current google-chrome version is 96.0.4664
-2021-11-25 19:41:52 INFO Get LATEST chromedriver version for 96.0.4664 google-chrome
-2021-11-25 19:41:52 INFO Driver [/Users/alexanderlozovoy/.wdm/drivers/chromedriver/mac64/96.0.4664.45/chromedriver] found in cache
-2021-11-25 19:41:54 INFO Start app on https://qacoursemoodle.innopolis.university/login/index.php<br/> -------------------------------Captured log call-------------------------------- <br/>2021-11-25 19:41:55 INFO Login with user selivan_21@example.com and password None<br/></div></td></tr></tbody></table></body></html>
+2021-12-19 02:32:29 INFO ====== WebDriver manager ======
+2021-12-19 02:32:29 INFO Current google-chrome version is 96.0.4664
+2021-12-19 02:32:29 INFO Get LATEST chromedriver version for 96.0.4664 google-chrome
+2021-12-19 02:32:29 INFO Driver [C:\Users\aimemo\.wdm\drivers\chromedriver\win32\96.0.4664.45\chromedriver.exe] found in cache<br/></div></td></tr></tbody></table></body></html>
