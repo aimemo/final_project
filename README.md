@@ -46,7 +46,7 @@ https://berpress.github.io/online-grocery-store/
 
 ### Report
 
-[For opening report in other page click here](https://htmlpreview.github.io/?https://github.com/aimemo/final_project/blob/master/report.html)
+[Open the report](https://htmlpreview.github.io/?https://github.com/aimemo/final_project/blob/master/report.html)
 
 <!-- 
 ### Allure
