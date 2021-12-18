@@ -4,47 +4,46 @@
 Final project / QA Python
 
 
-[//]: # (Use python 3.8 +)
+#### Use python 3.8 +
 
-[//]: # (Create and activate virtual environments)
+Create and activate virtual environments
 
-[//]: # ()
-[//]: # (```)
+#### For Mac OS
+```
+python3 -m venv env
 
-[//]: # (python3 -m venv env)
+source env/bin/activate
+```
 
-[//]: # (source env/bin/activate)
+#### For Windows
+```
+python3 -m venv env
 
-[//]: # (```)
+env\Scripts\activate
+```
 
-[//]: # ()
-[//]: # (Run in terminal)
 
-[//]: # ()
-[//]: # (```)
+#### Run in terminal for install used packages
 
-[//]: # (pip install -r requirements.txt)
 
-[//]: # (```)
+```
+pip install -r requirements.txt
+```
 
-[//]: # ()
-[//]: # (pre-commit https://pre-commit.com)
 
-[//]: # (```)
+#### pre-commit https://pre-commit.com
 
-[//]: # (pre-commit run --all-files)
+```
+pre-commit run --all-files
+```
 
-[//]: # (```)
 
-[//]: # ()
-[//]: # (Test app)
+#### Test app
 
-[//]: # (```)
+```
+https://berpress.github.io/online-grocery-store/
+```
 
-[//]: # (https://qacoursemoodle.innopolis.university)
 
-[//]: # (```)
+pytest --alluredir=allure-results/
 
-[//]: # ()
-[//]: # ()
-[//]: # (pytest --alluredir=allure-results/ )
