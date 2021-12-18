@@ -44,6 +44,10 @@ pre-commit run --all-files
 https://berpress.github.io/online-grocery-store/
 ```
 
+### Report
+```
+https://github.com/aimemo/final_project/blob/master/report.html
+```
 
 pytest --alluredir=allure-results/
 
