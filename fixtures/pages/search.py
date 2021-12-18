@@ -1,6 +1,4 @@
 import logging
-import time
-
 from selenium.webdriver.common.by import By
 
 from fixtures.pages.base_page import BasePage
@@ -24,3 +22,4 @@ class Search(BasePage):
     def search_result(self):
         text = self.custom_get_text(locator=(By.CLASS_NAME, "card-title"))
         return text
+
