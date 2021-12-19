@@ -17,17 +17,17 @@ class BasePage:
             elements = []
         return elements
 
-    def custom_input_element(self, locator, input, wait_time=5):
+    def custom_input_element(self, locator, input, wait_time=3):
         element = self.custom_find_element(locator, wait_time)[0]
         time.sleep(2)
         element.send_keys(input)
 
-    def custom_click_element(self, locator, wait_time=5):
+    def custom_click_element(self, locator, wait_time=3):
         element = self.custom_find_element(locator, wait_time)[0]
         time.sleep(2)
         element.click()
 
-    def custom_get_text(self, locator, wait_time=5):
+    def custom_get_text(self, locator, wait_time=3):
         elements = self.custom_find_element(locator, wait_time)
         time.sleep(2)
         text = []
