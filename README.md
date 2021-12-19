@@ -51,11 +51,9 @@ https://berpress.github.io/online-grocery-store/
 ```
 $ pytest --html=report.html --self-contained-html
 ```
-<!-- 
+<!--
 ### Allure
 
 pytest --alluredir=allure-results/
 
  -->
-
-

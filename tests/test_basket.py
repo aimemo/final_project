@@ -2,9 +2,9 @@
 Tests for basket:
 1. Increase quantity of product
 2. Decrease quantity of product
-3. Buying of product
+3. Deleting product from basket
+4. Buying of product
 """
-from fixtures.pages.constants import Constants
 
 
 class TestBasket:
@@ -68,6 +68,7 @@ class TestBasket:
         app.search.search_item(data=item)
         app.basket.add_to_basket()
         app.basket.open_basket()
+        app.basket.current_quantity()
         basket_text = app.basket.basket_text()
         basket_product = basket_text[1]
         assert item in basket_product
@@ -100,4 +101,3 @@ class TestBasket:
         basket_text = app.basket.basket_text()
         basket_product = basket_text[1]
         assert "Cart is Empty" in basket_product
-

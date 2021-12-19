@@ -34,7 +34,7 @@ class TestSearch:
         item = "Луна"
         app.search.search_item(data=item)
         result = app.search.search_result()
-        assert item not in result, 'Check not valid search'
+        assert item not in result, "Check not valid search"
 
     def test_add_item_to_basket(self, app):
         """
@@ -56,5 +56,3 @@ class TestSearch:
         assert basket_title == Constants.BASKET_TITLE
         basket_product = basket_text[1]
         assert item in basket_product
-
-
