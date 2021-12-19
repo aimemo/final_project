@@ -12,7 +12,7 @@ def pytest_addoption(parser):
                      help="Products Shop url")
 
 
-@pytest.fixture()
+@pytest.fixture(scope="session")
 def app(request):
     url = request.config.getoption("--url")
     driver = webdriver.Chrome(ChromeDriverManager().install())
