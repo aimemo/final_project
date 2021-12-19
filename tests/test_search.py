@@ -40,9 +40,11 @@ class TestSearch:
         """
         Steps:
         1. Open start page
-        2. Add item to the basket
-        3. Open the basket
-        4. Check item in the basket
+        2. Random choice of finding product
+        3. Search of random product
+        4. Add product to the basket
+        5. Open the basket
+        6. Check product in the basket
         """
         app.open_start_page()
         item = app.search.random_item()
