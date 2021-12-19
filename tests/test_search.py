@@ -4,7 +4,10 @@ Tests for start page:
 2. Search item with invalid data
 3. Add item to the basket
 """
+import logging
 from fixtures.pages.constants import Constants
+
+logger = logging.getLogger("moodle")
 
 
 class TestSearch:
@@ -17,6 +20,7 @@ class TestSearch:
         4. Check result
         """
         app.open_start_page()
+        logger.info(f"Запущен тест поиска валидного товара")
         item = app.search.random_item()
         app.search.search_item(data=item)
         result = app.search.search_result()
@@ -31,6 +35,7 @@ class TestSearch:
         4. Check result
         """
         app.open_start_page()
+        logger.info(f"Запущен тест поиска отсутствующего товара")
         item = "Луна"
         app.search.search_item(data=item)
         result = app.search.search_result()
@@ -47,6 +52,7 @@ class TestSearch:
         6. Check product in the basket
         """
         app.open_start_page()
+        logger.info(f"Запущен тест поиска валидного товара и добавления его в корзину")
         item = app.search.random_item()
         app.search.search_item(data=item)
         app.basket.add_to_basket()

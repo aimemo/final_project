@@ -5,6 +5,9 @@ Tests for basket:
 3. Deleting product from basket
 4. Buying of product
 """
+import logging
+
+logger = logging.getLogger("moodle")
 
 
 class TestBasket:
@@ -21,6 +24,7 @@ class TestBasket:
         8. Check quantity of product
         """
         app.open_start_page()
+        logger.info(f"Запущен тест увеличения количества товара в корзине")
         item = app.search.random_item()
         app.search.search_item(data=item)
         app.basket.add_to_basket()
@@ -43,6 +47,7 @@ class TestBasket:
         8. Check quantity of product
         """
         app.open_start_page()
+        logger.info(f"Запущен тест уменьшения количества товара в корзине")
         item = app.search.random_item()
         app.search.search_item(data=item)
         app.basket.add_to_basket()
@@ -64,6 +69,7 @@ class TestBasket:
         7. Check product delete from basket
         """
         app.open_start_page()
+        logger.info(f"Запущен тест удаления товара из корзины")
         item = app.search.random_item()
         app.search.search_item(data=item)
         app.basket.add_to_basket()
@@ -89,6 +95,7 @@ class TestBasket:
         8. Check basket is empty
         """
         app.open_start_page()
+        logger.info(f"Запущен тест покупки товара, находящегося в корзине")
         item = app.search.random_item()
         app.search.search_item(data=item)
         app.basket.add_to_basket()
