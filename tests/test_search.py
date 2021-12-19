@@ -4,6 +4,7 @@ Tests for start page:
 2. Search item with invalid data
 3. Add item to the basket
 """
+from fixtures.pages.constants import Constants
 
 
 class TestSearch:
@@ -43,5 +44,15 @@ class TestSearch:
         3. Open the basket
         4. Check item in the basket
         """
-        pass
+        app.open_start_page()
+        item = app.search.random_item()
+        app.search.search_item(data=item)
+        app.basket.add_to_basket()
+        app.basket.open_basket()
+        basket_text = app.basket.basket_text()
+        basket_title = basket_text[0]
+        assert basket_title == Constants.BASKET_TITLE
+        basket_product = basket_text[1]
+        assert item in basket_product
+
 

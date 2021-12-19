@@ -1,6 +1,7 @@
 """
 Top-level structure Application for access to another pages
 """
+from fixtures.pages.basket import Basket
 from fixtures.pages.search import Search
 from fixtures.pages.start_page import StartPage
 
@@ -11,7 +12,7 @@ class Application:
         self.url = url
         self.start = StartPage(self)
         self.search = Search(self)
-        # self.basket = Basket(self)
+        self.basket = Basket(self)
 
     # Opening the start page
     def open_start_page(self):
