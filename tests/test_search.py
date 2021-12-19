@@ -17,7 +17,7 @@ class TestSearch:
         4. Check result
         """
         app.open_start_page()
-        item = "apples"
+        item = app.search.random_item()
         app.search.search_item(data=item)
         result = app.search.search_result()
         assert item in result
@@ -31,7 +31,7 @@ class TestSearch:
         4. Check result
         """
         app.open_start_page()
-        item = "Чебурек"
+        item = "Луна"
         app.search.search_item(data=item)
         result = app.search.search_result()
         assert item not in result, 'Check not valid search'

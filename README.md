@@ -48,9 +48,14 @@ https://berpress.github.io/online-grocery-store/
 
 [Open the report](https://htmlpreview.github.io/?https://github.com/aimemo/final_project/blob/master/report.html)
 
+```
+$ pytest --html=report.html --self-contained-html
+```
 <!-- 
 ### Allure
 
 pytest --alluredir=allure-results/
 
  -->
+
+
