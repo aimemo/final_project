@@ -43,12 +43,12 @@ class LoginForm(unittest.TestCase):
         try:
             self.driver.get("http://crossbrowsertesting.github.io/login-form.html")
             self.driver.maximize_window()
-            self.driver.find_element_by_name("username").send_keys(
+            self.driver.find_element(By.NAME, "username").send_keys(
                 "tester@crossbrowsertesting.com"
             )
-            self.driver.find_element_by_name("password").send_keys("test123")
-            self.driver.find_element_by_css_selector(
-                "body > div > div > div > div > form > div.form-actions > button"
+            self.driver.find_element(By.NAME, "password").send_keys("test123")
+            self.driver.find_element(By.CSS_SELECTOR,
+                                     "body > div > div > div > div > form > div.form-actions > button"
             ).click()
 
             elem = WebDriverWait(self.driver, 10).until(
